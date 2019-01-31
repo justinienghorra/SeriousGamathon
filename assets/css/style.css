@@ -2,39 +2,143 @@
     display: none;
 }
 
+@font-face {
+    font-family: BebasNeue;
+    src: url("../fonts/BebasNeue.otf") format("opentype");
+}
+
 .main {
-    background-color: red;
     display: flex;
     height: 100%;
-    text-align: center;
 }
 
 .wrapper{
     height: 70%;
 }
 
-.title{
-    height: 10%;
+.client{
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.choices{
+.title{
+    height: 10%;
+    text-align: center;
+    background-color:rgba(213,213,213,0.8);
+    
+}
+
+.choices-zone{
+    align-items: center;
     height: 20%;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    border-left-color: #712c83;
+    border-left-style: solid;
+    border-right-color: #712c83;
+    border-right-style: solid;
+    border-top-color: #712c83;
+    border-top-style: solid;
+    border-bottom-color: #712c83;
+    border-bottom-style: solid;
 }
 
 .toDoList{
     height: 70%;
+    text-align: center;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 4px;
+    border-left-width: 8px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    border-left-color: #18509a;
+    border-left-style: solid;
+    border-right-color: #18509a;
+    border-right-style: solid;
+    border-top-color: #18509a;
+    border-top-style: solid;
+    border-bottom-color: #18509a;
+    border-bottom-style: solid;
 }
 
 .ressouces{
     height: 30%;
+    border-style: solid;
+    border-top-width: 4px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    border-left-color: #18509a;
+    border-left-style: solid;
+    border-right-color: #18509a;
+    border-right-style: solid;
+    border-top-color: #18509a;
+    border-top-style: solid;
+    border-bottom-color: #18509a;
+    border-bottom-style: solid;
 }
 
-.wrapper-element{
+.game-website{
     height: 100%;
+    border-top-width: 8px;
+    border-right-width: 4px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    border-left-color: #d83d42;
+    border-left-style: solid;
+    border-right-color: #d83d42;
+    border-right-style: solid;
+    border-top-color: #d83d42;
+    border-top-style: solid;
+    border-bottom-color: #d83d42;
+    border-bottom-style: solid;
+
+}
+
+.game-dialog{
+    height: 100%;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 4px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    border-left-color: #d83d42;
+    border-left-style: solid;
+    border-right-color: #d83d42;
+    border-right-style: solid;
+    border-top-color: #d83d42;
+    border-top-style: solid;
+    border-bottom-color: #d83d42;
+    border-bottom-style: solid;
+}
+
+.ressourcesdiv{
+    padding-top: 10px;
+    
 }
 
 .row{
     margin-bottom: 0%;
+}
+
+.items{
+    margin-top: 2%
+}
+
+.btn-color{
+    background-color: #54A0AB;
 }
 
 html, body {

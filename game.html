@@ -6,41 +6,86 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <div class="row main">
-        <div class="col s10 red lighten-3">
-            <div class="row lime accent-2 title">
-                Game Title
+    <div class="row main" id="app" v-cloak>
+        <div class="col s10">
+            <div class="row title">
+                <span class="float:left">
+                    <img align="left" src="assets/img/idmc_logo.png">
+                </span>
+                Foo Fingerz
             </div>
-            <div class="row wrapper">      
-                <div class="col s6 wrapper-element lime accent-3">
+            <div class="row wrapper">
+                <div class="col s6 game-website">
                     Game Computer Screen
                 </div>
-                <div class="col s6 wrapper-element lime accent-1">
-                    Game Dialog Screen
+                <div class="col s6 game-dialog">
+                    <img v-bind:src="clientImg" alt="grumpy" class="client" />
                 </div>
             </div>
-            <div class="row cyan accent-1 choices">
-                Game Choices List
+            <div class="row choices-zone">
+                <div class="col s12">
+                    Sélectionner les compétences nécessaires :
+                    <form action="#" class="items">
+                        <p class="col s3">
+                            <label>
+                                <input type="checkbox" name="choices" v-model="checkboxes.eLearning" />
+                                <span>E-learning</span>
+                            </label>
+                        </p>
+                        <p class="col s3">
+                            <label>
+                                <input type="checkbox" name="choices" v-model="checkboxes.dataScience" />
+                                <span>Data Science</span>
+                            </label>
+                        </p>
+                        <p class="col s3">
+                            <label>
+                                <input type="checkbox" name="choices" v-model="checkboxes.uxDesign" />
+                                <span>UX Design</span>
+                            </label>
+                        </p>
+                        <span class="col s3">
+                            <a class="waves-effect waves-light btn-large btn-color" v-on:click="treatComplaint">Valider</a>
+                        </span>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="col s2 pink lighten-1">
-            <div class="row toDoList deep-purple lighten-3">
-                Game To Do List
+        <div class="col s2">
+            <div class="row toDoList">
+                <div class="col s12">
+                    <span>Le client a dit :</span>
+                    <b v-show="isComplaint">{{currentProblem}}</b>
+                    <b v-show="!isComplaint">{{answer}}</b>
+                </div>
             </div>
-            <div class="row ressouces indigo lighten-2">
-                Game Resources info
+            <div class="row ressouces">
+                <div class="col s12">
+                    <span>Gestion de vos ressources : </span>
+                    <div class="ressourcesdiv">
+                        Temps : </br> <progress max="12" v-bind:value="time"></progress> </br>
+                    </div>
+                    <div>
+                        Satisfaction Client : </br> <progress max="100" v-bind:value="satisfaction"></progress>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/avascript">
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
