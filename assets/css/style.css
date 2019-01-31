@@ -219,6 +219,9 @@ nav li {
 .btn-small {
     background-color: #e3270a;
 }
+.row .series{
+    margin-left : 10%;
+}
 
 #help {
     margin-left: 80%;
