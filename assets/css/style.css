@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-.wrapper{
+.wrapper {
     height: 70%;
 }
 .logo{
@@ -29,21 +29,46 @@
     margin-left: auto;
     margin-right: auto;
 }
-.client{
+.client {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
     height: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
 }
 
-.title{
+.speech-bubble {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    width: 40%;
+    height: 30%;
+    background: #00aabb;
+    color: white;
+    border-radius: .4em;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 43px solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -21.5px;
+    margin-bottom: -43px;
+}
+
+.title {
     height: 10%;
     text-align: center;
-    background-color:rgba(213,213,213,0.8);
-    
+    background-color: rgba(213, 213, 213, 0.8);
 }
 
-.choices-zone{
+.choices-zone {
     align-items: center;
     height: 20%;
     border-top-width: 8px;
@@ -62,7 +87,7 @@
     border-bottom-style: solid;
 }
 
-.toDoList{
+.toDoList {
     height: 70%;
     text-align: center;
     border-top-width: 8px;
@@ -81,7 +106,7 @@
     border-bottom-style: solid;
 }
 
-.ressouces{
+.ressouces {
     height: 30%;
     border-style: solid;
     border-top-width: 4px;
@@ -100,7 +125,7 @@
     border-bottom-style: solid;
 }
 
-.game-website{
+.game-website {
     height: 100%;
     border-top-width: 8px;
     border-right-width: 4px;
@@ -116,10 +141,14 @@
     border-top-style: solid;
     border-bottom-color: #d83d42;
     border-bottom-style: solid;
-
 }
 
-.game-dialog{
+.game-dialog {
+    position: relative;
+    background-image: url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
     height: 100%;
     border-top-width: 8px;
     border-right-width: 8px;
@@ -137,25 +166,85 @@
     border-bottom-style: solid;
 }
 
-.ressourcesdiv{
+.ressourcesdiv {
     padding-top: 10px;
-    
 }
 
-.row{
+.row {
     margin-bottom: 0%;
 }
 
-.items{
-
- 
+.items {
+    margin-top: 2%
 }
 
-.btn-color{
+.btn-color {
     background-color: #54A0AB;
 }
 
 html, body {
     font-family: 'Raleway', sans-serif;
     height: 100%;
+}
+
+/* SECTION DEDIEE A L'ORDINATEUR VIRTUEL */
+
+.site {
+    border-top: solid 15px black;
+    border-bottom: solid 15px black;
+    border-left: solid 20px black;
+    border-right: solid 20px black;
+}
+
+.site1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.site3 {
+    background-color: #252120;
+    color: white;
+    width: 105%;
+    height: 100%;
+    margin-left: -2.5%;
+}
+
+.series img {
+    width: 20%;
+    height: 65px;
+}
+
+nav {
+    background-color: #252120;
+    color: white;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.site3 #lo {
+    width: 40%;
+}
+
+nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.btn-small {
+    background-color: #e3270a;
+}
+.row .series{
+    margin-left : 10%;
+}
+
+#help {
+    margin-left: 80%;
+    color: white;
+    font-size: 10px;
+}
+
+#img-right {
+    background-image: url("../img/img-right.png");
+    background-position: center;
+    background-size : cover;
 }
