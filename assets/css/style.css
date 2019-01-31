@@ -1,3 +1,42 @@
 [v-cloak] {
     display: none;
 }
+
+.main {
+    background-color: red;
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+
+.wrapper{
+    height: 70%;
+}
+
+.title{
+    height: 10%;
+}
+
+.choices{
+    height: 20%;
+}
+
+.toDoList{
+    height: 70%;
+}
+
+.ressouces{
+    height: 30%;
+}
+
+.wrapper-element{
+    height: 100%;
+}
+
+.row{
+    margin-bottom: 0%;
+}
+
+html, body {
+    height: 100%;
+}
