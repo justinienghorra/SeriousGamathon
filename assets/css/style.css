@@ -193,6 +193,9 @@ nav li{
     margin-right : 15px;
     font-size : 13px;
 }
+.row .series{
+    margin-left : 10%;
+}
 
 .btn-small{
     background-color:#e3270a;
