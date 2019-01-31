@@ -1,0 +1,29 @@
+{
+	"client1": {
+		"problem": "Je n'arrive pas à me servir de votre site. L'interface n'est pas intuitive, j'ai du mal à m'y retrouver...",
+		"UX": "C'est déjà mieux. J'espère ne pas mettre trop de temps à apprendre à me servir du site...",
+		"el": "Ce tutoriel va m'aider à m'y retrouver, mais l'interface n'est pas intuitive.",
+		"data": "Vous ne m'aidez pas, là !",
+		"uxandel": "Merci beaucoup, votre interface est beaucoup plus claire et votre tutoriel va m'apprendre à m'en servir !",
+		"uxanddata": "C'est déjà mieux. J'espère ne pas mettre trop de temps à apprendre à me servir du site...",
+		"elanddata": "Ce tutoriel va m'aider à m'y retrouver, mais l'interface n'est pas intuitive."
+	},
+	"client2": {
+		"problem": "Je n'ai pas d'idées de série à regarder, votre site devrait afficher des recommandations...",
+		"UX2": "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder.",
+		"eL2": "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder.",
+		"data": "J'ai vu que vous aviez mis des recommandations, mais j'ai eu beaucoup de mal à les trouver...",
+		"uxandel": "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder !",
+		"uxanddat": "Merci ! Vos recommandations m'ont permis de découvrir de nouvelles séries très rapidement !",
+		"elanddata": "J'ai vu que vous aviez mis des recommandations, mais j'ai eu beaucoup de mal à les trouver...",
+	},
+	"client3": {
+		"problem": "Il faut augmenter la sécurité du site, la base de données peut être hackée à tout moment.",
+		"UX": "Ca ne change rien à la sécurité.",
+		"eL": "Ca ne change rien à la sécurité.",
+		"data": "Vos compétences ont permis de résoudre le problème, les données des clients sont protégées.",
+		"uxandel": "Ca ne change rien à la sécurité.",
+		"uxanddata": "Vous avez mis trop de temps à accomplir cette tâche...",
+		"elanddata": "Vous avez mis trop de temps à accomplir cette tâche..."
+	}
+}
