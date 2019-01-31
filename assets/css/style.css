@@ -17,10 +17,12 @@
 }
 
 .client{
+    position: absolute;
+    left: 40%;
+    bottom: 0;
     height: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
 }
 
 .title{
@@ -107,6 +109,11 @@
 }
 
 .game-dialog{
+    position: relative;
+    background-image: url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
     height: 100%;
     border-top-width: 8px;
     border-right-width: 8px;
