@@ -2,6 +2,11 @@
     display: none;
 }
 
+@font-face {
+    font-family: BebasNeue;
+    src: url("../fonts/BebasNeue.otf") format("opentype");
+}
+
 .main {
     display: flex;
     height: 100%;
@@ -11,6 +16,10 @@
     border-style: solid;
     border-color: #712c83;
     height: 70%;
+}
+
+.client{
+    height: 50%;
 }
 
 .title{

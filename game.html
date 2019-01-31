@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,24 +32,24 @@
                     <form action="#" class="items">
                         <p class="col s3">
                             <label>
-                            <input type="checkbox" name="choices" value="choice1"/>
-                            <span>compétences 1</span>
+                                <input type="checkbox" name="choices" value="choice1" v-model="checkboxes.eLearning"/>
+                                <span>compétences 1</span>
                             </label>
                         </p>
                         <p class="col s3">
                             <label>
-                            <input type="checkbox" name="choices" value="choice2"/>
-                            <span>compétences 2</span>
+                                <input type="checkbox" name="choices" value="choice2" v-model="checkboxes.dataScience" />
+                                <span>compétences 2</span>
                             </label>
                         </p>
                         <p class="col s3">
                             <label>
-                            <input type="checkbox" name="choices" value="choice3"/>
-                            <span>compétences 3</span>
+                                <input type="checkbox" name="choices" value="choice3" v-model="checkboxes.uxDesign" />
+                                <span>compétences 3</span>
                             </label>
                         </p>
                         <span class="col s3">
-                            <a class="waves-effect waves-light btn-large">Valider</a>
+                            <a class="waves-effect waves-light btn-large" v-on:click="treatComplaint">Valider</a>
                         </span>
                     </form>
                 </div>
@@ -74,8 +74,13 @@
             </div>
         </div>
     </div>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/avascript">
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
