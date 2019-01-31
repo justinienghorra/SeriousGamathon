@@ -40,3 +40,55 @@
 html, body {
     height: 100%;
 }
+
+
+/* SECTION DEDIEE A L'ORDINATEUR VIRTUEL */
+.site{
+    border-top : solid 15px black;
+    border-bottom : solid 15px black ;
+    border-left : solid 20px black;
+    border-right : solid 20px black;
+}
+.site1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.site3{
+    background-color : #252120;
+    color : white;
+    width : 105%;
+    height : 100%;
+    margin-left : -2.5%;
+}
+
+.series img{
+    width : 20%;
+    height : 65px;
+}
+
+nav{
+    background-color: #252120;
+    color : white;
+    width : 96%;
+    margin-left : 2%;
+}
+
+.site3 #lo{
+    width : 40%;
+}
+
+nav li{
+    margin-left : 15px;
+    margin-right : 15px;
+    font-size : 13px;
+}
+
+.btn-small{
+    background-color:#e3270a;
+}
+
+#help{
+    margin-left : 80%;
+    color : white;
+    font-size : 10px;
+}
