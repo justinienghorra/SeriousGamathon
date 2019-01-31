@@ -1,18 +1,22 @@
 const app = new Vue({
     el: '#app',
     data: {
-        elt1: [],
-        elt2: {
-            elt3: true,
-            elt4: "yay"
+        checkboxes: {
+            eLearning: false,
+            dataScience: false,
+            uxDesign: false
         },
-        elt5: 50
+        nbComplaintsTreated: 0,
+        isComplaint: true,
+        client: {
+            grumpy : "../img/grumpy.png",
+            happy : "../img/happy.png"
+        }
     },
     methods: {
-        yay: function () {
-            this.elt2.elt4 = "yay !!!";
-            this.elt2.elt3 = false;
-            this.elt5 = 100;
+        treatComplaint: function () {
+            this.nbComplaintsTreated++;
+            this.isComplaint = false;
         }
     }
 });
