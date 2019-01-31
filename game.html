@@ -70,6 +70,11 @@
                 </div>
                 <div class="col s6 game-dialog">
                     <img v-bind:src="clientImg" alt="grumpy" class="client" />
+                    <hgroup class="speech-bubble">
+
+                        <b v-show="isComplaint">{{currentProblem}}</b>
+                        <b v-show="!isComplaint">{{answer}}</b>
+                    </hgroup>
                 </div>
             </div>
             <div class="row choices-zone">
@@ -102,12 +107,7 @@
             </div>
         </div>
         <div class="col s2">
-            <div class="row toDoList">
-                <div class="col s12">
-                    <span>Le client a dit :</span>
-                    <b v-show="isComplaint">{{currentProblem}}</b>
-                    <b v-show="!isComplaint">{{answer}}</b>
-                </div>
+            <div class="row toDoList" id="img-right">
             </div>
             <div class="row ressouces">
                 <div class="col s12">
