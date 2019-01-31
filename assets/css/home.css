@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+img {
+    height: 40%;
+}
+
+h1 {
+    color : white;
+}
+
+p {
+    text-align: center;
+    color : lightgray;
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top : 1%;
+}
+
+.btn-large {
+    margin: 30px;
+}

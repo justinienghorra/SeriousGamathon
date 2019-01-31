@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="row main" id="app" v-cloak>
+        <div class="col s10">
+            <div class="row title">
+                <span class="float:left">
+                    <img align="left" class="logo" src="assets/img/idmc_logo.png">
+                </span>
+                Foo Fingerz
+            </div>
+            <div class="row wrapper">
+                <div class="col s6 game-website">
+                    <div class="container-fluid site1" v-show="pageToLoad === 1">
+                        <div class="row red">
+                            <a> Se connecter </a>
+                            <h1>NetFingz</h1>
+                        </div>
+                        <div class="row">
+                            <p>Nos contenus</p>
+                            <a href="#">Harry Potter et les reliques de la mort</a>
+                            <a href="#">Star Wars IIX</a>
+                            <a href="#">L'amour est dans le pré</a>
+                            <a href="#">E.T</a>
+                            <a href="#">Dirty Dancing</a>
+                            <a href="#">The Good Place</a>
+                            <a href="#">Riverdale</a>
+                            <a href="#">Plus Belle La Vie</a>
+                            <a href="#">Game Of Thrones</a>
+                            <a href="#">Avatar</a>
+                            <a href="#">The Walking Dead</a>
+                            <a href="#">Qu'est-ce qu'on a fait au bon Dieu ?</a>
+                            </br></br>
+                        </div>
+                        <div class="row red">
+                            <a>S'inscrire</a>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid site1" v-show="pageToLoad === 2">
+                        <div class="row red">
+                            <a> Se connecter </a>
+                            <h1>NetFingz</h1>
+                        </div>
+                        <div class="row">
+                            <p>Nos contenus</p>
+                            <a href="#">Harry Potter et les reliques de la mort</a>
+                            <a href="#">Star Wars IIX</a>
+                            <a href="#">L'amour est dans le pré</a>
+                            <a href="#">E.T</a>
+                            <a href="#">Dirty Dancing</a>
+                            <a href="#">The Good Place</a>
+                            <a href="#">Riverdale</a>
+                            <a href="#">Plus Belle La Vie</a>
+                            <a href="#">Game Of Thrones</a>
+                            <a href="#">Avatar</a>
+                            <a href="#">The Walking Dead</a>
+                            <a href="#">Qu'est-ce qu'on a fait au bon Dieu ?</a>
+                            </br></br> <button>TUTORIEL D'UTILISATION</button> </br> </br>
+                        </div>
+                        <div class="row red">
+                            <a>S'inscrire</a>
+                        </div>
+                    </div>
+
+
+                    <div class="container-fluid site3" v-show="pageToLoad === 3">
+                        <div class="row">
+                            <nav>
+                                <div class="nav-wrapper">
+                                    <img id="lo" src="assets/img/netfingz.png">
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                        <li>Mon profil</li>
+                                        <li>Catégories</li>
+                                        <li>Rechercher</li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <a id="help"> Besoin d'aide? </a>
+                        <div class="row series">
+                            <div class="row">
+                                Nos séries
+                                <div class="row">
+                                    <img src="assets/img/thegoodplace.jpg" alt="The Good Place">
+                                    <img src="assets/img/riverdale.png" alt="Riverdale">
+                                    <img src="assets/img/got.jpg" alt="Game Of Thrones">
+                                    <img src="assets/img/twd.jpg" alt="The Walking Dead">
+                                </div>
+                            </div>
+                            <div class="row">
+                                Nos films
+                                <div class="row">
+                                    <img src="assets/img/hp7.jpg" alt="Harry Potter et les reliques de la mort Partie I">
+                                    <img src="assets/img/starwars.jpg" alt="Star Wars IIX">
+                                    <img src="assets/img/et.jpg" alt="E.T">
+                                    <img src="assets/img/dirtydancing.png" alt="Dirty Dancing">
+                                </div>
+                            </div>
+                            <div class="row">
+                                Recommandations pour vous
+                                <div class="row">
+                                    <img src="assets/img/brooklyn-99.jpg" alt="Brooklyn-99">
+                                    <img src="assets/img/lotr.jpg" alt="Seigneur des Anneaux">
+                                    <img src="assets/img/grease.jpg" alt="Grease">
+                                    <img src="assets/img/narcos.jpeg" alt="Narcos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid site3" v-show="pageToLoad === 4">
+                        <div class="row">
+                            <nav>
+                                <div class="nav-wrapper">
+                                    <img id="lo" src="assets/img/netfingz.png">
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                        <li>Mon profil</li>
+                                        <li>Catégories</li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="row series">
+                            <div class="row">
+                                Nos séries
+                                <div class="row">
+                                    <img src="assets/img/thegoodplace.jpg" alt="The Good Place">
+                                    <img src="assets/img/riverdale.png" alt="Riverdale">
+                                    <img src="assets/img/got.jpg" alt="Game Of Thrones">
+                                    <img src="assets/img/twd.jpg" alt="The Walking Dead">
+                                </div>
+                            </div>
+                            <div class="row">
+                                Nos films
+                                <div class="row">
+                                    <img src="assets/img/hp7.jpg" alt="Harry Potter et les reliques de la mort Partie I">
+                                    <img src="assets/img/starwars.jpg" alt="Star Wars IIX">
+                                    <img src="assets/img/et.jpg" alt="E.T">
+                                    <img src="assets/img/dirtydancing.png" alt="Dirty Dancing">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid site3" v-show="pageToLoad === 5">
+                        <div class="row">
+                            <nav>
+                                <div class="nav-wrapper">
+                                    <img id="lo" src="assets/img/netfingz.png">
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                        <li>Mon profil</li>
+                                        <li>Catégories</li>
+                                        <li>Rechercher</li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <a id="help"> Besoin d'aide? </a>
+                        <div class="row series">
+                            <div class="row">
+                                Nos séries
+                                <div class="row">
+                                    <img src="assets/img/thegoodplace.jpg" alt="The Good Place">
+                                    <img src="assets/img/riverdale.png" alt="Riverdale">
+                                    <img src="assets/img/got.jpg" alt="Game Of Thrones">
+                                    <img src="assets/img/twd.jpg" alt="The Walking Dead">
+                                </div>
+                            </div>
+                            <div class="row">
+                                Nos films
+                                <div class="row">
+                                    <img src="assets/img/hp7.jpg" alt="Harry Potter et les reliques de la mort Partie I">
+                                    <img src="assets/img/starwars.jpg" alt="Star Wars IIX">
+                                    <img src="assets/img/et.jpg" alt="E.T">
+                                    <img src="assets/img/dirtydancing.png" alt="Dirty Dancing">
+                                </div>
+                            </div>
+                            <button class="btn-small"> Recommandations </button>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid site3" v-show="pageToLoad === 6">
+                        <div class="row">
+                            <nav>
+                                <div class="nav-wrapper">
+                                    <img id="lo" src="assets/img/netfingz.png">
+                                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                        <li>Mon profil</li>
+                                        <li>Catégories</li>
+                                        <li>Rechercher</li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <a id="help"> Besoin d'aide? </a>
+                        <div class="row series">
+                            <div class="row">
+                                Nos séries
+                                <div class="row">
+                                    <img src="assets/img/thegoodplace.jpg" alt="The Good Place">
+                                    <img src="assets/img/riverdale.png" alt="Riverdale">
+                                    <img src="assets/img/got.jpg" alt="Game Of Thrones">
+                                    <img src="assets/img/twd.jpg" alt="The Walking Dead">
+                                </div>
+                            </div>
+                            <div class="row">
+                                Nos films
+                                <div class="row">
+                                    <img src="assets/img/hp7.jpg" alt="Harry Potter et les reliques de la mort Partie I">
+                                    <img src="assets/img/starwars.jpg" alt="Star Wars IIX">
+                                    <img src="assets/img/et.jpg" alt="E.T">
+                                    <img src="assets/img/dirtydancing.png" alt="Dirty Dancing">
+                                </div>
+                            </div>
+                            <div class="row">
+                                Recommandations pour vous
+                                <div class="row">
+                                    <img src="assets/img/brooklyn-99.jpg" alt="Brooklyn-99">
+                                    <img src="assets/img/lotr.jpg" alt="Seigneur des Anneaux">
+                                    <img src="assets/img/grease.jpg" alt="Grease">
+                                    <img src="assets/img/narcos.jpeg" alt="Narcos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 game-dialog">
+                    <img v-bind:src="clientImg" alt="grumpy" class="client" />
+                    <hgroup class="speech-bubble">
+
+                        <b v-show="isComplaint">{{currentProblem}}</b>
+                        <b v-show="!isComplaint">{{answer}}</b>
+                    </hgroup>
+                </div>
+            </div>
+            <div class="row choices-zone">
+                <div class="col s12">
+                    Sélectionner les compétences nécessaires :
+                    <form action="#" class="items">
+                        <p class="col s3">
+                            <label>
+                                <input type="checkbox" name="choices" v-model="checkboxes.eLearning" />
+                                <span>E-learning</span>
+                            </label>
+                            <img class="bulb tooltipped" data-position="top" data-tooltip="Le e-learning est une formation à distance
+                            qui s'effectue sur des supports multimédia via Internet" src="assets/img/bulb.png">
+                        </p>
+                        <p class="col s3 align">
+                            <label>
+                                <input type="checkbox" name="choices" v-model="checkboxes.dataScience" />
+                                <span>Data Science</span>
+                            </label>
+                            <img class="bulb tooltipped" data-position="top" data-tooltip="La Data Science ou science de la donnée 
+                            consiste à collecter, décrypter et analyser des données hétérogènes pour en tirer un enseignement pratique. 
+                            Elle aide à la prise de décision grâce à une plus grande lisibilité de ces dernières." src="assets/img/bulb.png">
+                        </p>
+                        <p class="col s3">
+                            <label>
+                                <input type="checkbox" name="choices" v-model="checkboxes.uxDesign" />
+                                <span>UX Design</span>
+                            </label>
+                            <img class="bulb tooltipped" data-position="top" data-tooltip="L'UX design permet d'améliorer la qualité 
+                            de l'expérience perçue par l'utilisateur dans toute situation d'interaction avec un dispositif, notamment numérique." src="assets/img/bulb.png">
+                        </p>
+                        <span class="col s3">
+                            <a class="waves-effect waves-light btn-large btn-color" v-on:click="treatComplaint">Valider</a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col s2">
+            <div class="row toDoList" id="img-right">
+            </div>
+            <div class="row ressouces">
+                <div class="col s12">
+                    <span>Gestion de vos ressources : </span>
+                    <div class="ressourcesdiv">
+                        Temps : </br> <progress max="12" v-bind:value="time"></progress> </br>
+                    </div>
+                    <div>
+                        Satisfaction Client : </br> <progress max="100" v-bind:value="satisfaction"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        M.AutoInit(); 
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems);
+          });
+    </script>
+</body>
+
+</html>

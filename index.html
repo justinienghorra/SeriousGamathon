@@ -4,17 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>Foo Fingerz</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="assets/css/home.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <div id="app" v-cloak>
-        <h1>{{elt2.elt4}}</h1>
-        <a href="#" v-on:click="yay" v-show="elt2.elt3">yay ?</a>
-        <progress max="100" v-bind:value="elt5"></progress>
+    <div class="flex-container container">
+        <img src="assets/img/logo.png" />
+        <h1>Foo Fingerz</h1>
+        <p class="container">Bienvenue dans l'équipe Netfingz. Vous serez responsable du pôle <strike>numérique</strike>
+            <b>DIGITAL</b> de notre service de vidéo à la demande... Répondez au mieux aux plaintes de nos clients qui viendront vous déranger dans
+            votre travail. A vous de gérer votre temps !</p>
+        <a class="waves-effect waves-light btn-large red darken-1" href="game.html"><i class="material-icons right">games</i>Jouer</a>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
+
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
 </body>
 
 </html>
