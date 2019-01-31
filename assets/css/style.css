@@ -8,12 +8,13 @@
 }
 
 .main {
-    background-color: red;
     display: flex;
     height: 100%;
 }
 
 .wrapper{
+    border-style: solid;
+    border-color: #712c83;
     height: 70%;
 }
 
@@ -23,34 +24,42 @@
 
 .title{
     height: 10%;
+    text-align: center;
 }
 
 .choices-zone{
     align-items: center;
     height: 20%;
+    border-style: solid;
+    border-color: #712c83;
 }
 
 .toDoList{
     height: 70%;
+    text-align: center;
+    border-style: solid;
+    border-color: #712c83;
 }
 
 .ressouces{
     height: 30%;
+    border-style: solid;
+    border-color: #712c83;
 }
 
 .wrapper-element{
     height: 100%;
+    border-style: solid;
+    border-color: #712c83;
 }
 
 .row{
     margin-bottom: 0%;
-    margin-left: 0%;
 }
 
 .items{
-    align-self: center;
+    margin-top: 2%
 }
-
 
 html, body {
     height: 100%;

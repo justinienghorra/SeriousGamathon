@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <div class="row main" id="app" v-cloak>
-        <div class="col s10 red lighten-3">
-            <div class="row lime accent-2 title">
+    <div class="row main">
+        <div class="col s10">
+            <div class="row title">
                 Foo Fingerz
             </div>
-            <div class="row wrapper">
-                <div class="col s6 wrapper-element lime accent-3">
+            <div class="row wrapper">      
+                <div class="col s6 wrapper-element">
                     Game Computer Screen
                 </div>
-                <div class="col s6 wrapper-element lime accent-1">
-                    <img src="assets/img/grumpy.png"/ class="client">
+                <div class="col s6 wrapper-element">
+                    Game Dialog Screen
                 </div>
             </div>
-            <div class="row cyan accent-1 choices-zone">
-                Sélectionner les compétences nécessaires :
-                <div class="row">
+            <div class="row choices-zone">
+                <div class="col s12">
+                    Sélectionner les compétences nécessaires :
                     <form action="#" class="items">
                         <p class="col s3">
                             <label>
@@ -55,15 +55,22 @@
                 </div>
             </div>
         </div>
-        <div class="col s2 pink lighten-1">
-            <div class="row toDoList deep-purple lighten-3">
-                <span>Le client a dit : <br><br></span>
-                <b v-show="isComplaint">Le site ne fonctionne pas !!!</b>
-                <b v-show="!isComplaint">Merci d'avoir traité ma demande !</b>
+        <div class="col s2">
+            <div class="row toDoList">
+                <div class="col s12">
+                    Game To Do List
+                </div>
             </div>
-            <div class="row ressouces indigo lighten-2">
-                Temps :
-                <progress max="100" value="80"></progress>
+            <div class="row ressouces">
+                <div class="col s12">
+                    <span>Gestion de vos ressources : </span>
+                    <div>
+                        Temps : </br> <progress max="100" value="80"></progress> </br>
+                    </div>
+                    <div>
+                        Satisfaction Client : </br> <progress max="100" value="30"></progress>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
