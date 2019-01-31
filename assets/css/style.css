@@ -2,11 +2,6 @@
     display: none;
 }
 
-@font-face {
-    font-family: BebasNeue;
-    src: url("../fonts/BebasNeue.otf") format("opentype");
-}
-
 .main {
     display: flex;
     height: 100%;
@@ -15,7 +10,25 @@
 .wrapper{
     height: 70%;
 }
+.logo{
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.align{
+    align-items: baseline;
+}
+
+.bulb{
+    height: 3px;
+    width: 6%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .client{
     height: 50%;
     display: block;
@@ -134,7 +147,8 @@
 }
 
 .items{
-    margin-top: 2%
+
+ 
 }
 
 .btn-color{
@@ -142,5 +156,6 @@
 }
 
 html, body {
+    font-family: 'Raleway', sans-serif;
     height: 100%;
 }

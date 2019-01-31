@@ -3,7 +3,7 @@
 
 <head>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
@@ -17,7 +17,7 @@
         <div class="col s10">
             <div class="row title">
                 <span class="float:left">
-                    <img align="left" src="assets/img/idmc_logo.png">
+                    <img align="left" class="logo" src="assets/img/idmc_logo.png">
                 </span>
                 Foo Fingerz
             </div>
@@ -38,18 +38,25 @@
                                 <input type="checkbox" name="choices" v-model="checkboxes.eLearning" />
                                 <span>E-learning</span>
                             </label>
+                            <img class="bulb tooltipped" data-position="top" data-tooltip="Le e-learning est une formation à distance
+                            qui s'effectue sur des supports multimédia via Internet" src="assets/img/bulb.png">
                         </p>
-                        <p class="col s3">
+                        <p class="col s3 align">
                             <label>
                                 <input type="checkbox" name="choices" v-model="checkboxes.dataScience" />
                                 <span>Data Science</span>
                             </label>
+                            <img class="bulb tooltipped" data-position="top" data-tooltip="La Data Science ou science de la donnée 
+                            consiste à collecter, décrypter et analyser des données hétérogènes pour en tirer un enseignement pratique. 
+                            Elle aide à la prise de décision grâce à une plus grande lisibilité de ces dernières." src="assets/img/bulb.png">
                         </p>
                         <p class="col s3">
                             <label>
                                 <input type="checkbox" name="choices" v-model="checkboxes.uxDesign" />
                                 <span>UX Design</span>
                             </label>
+                            <img class="bulb tooltipped" data-position="top" data-tooltip="L'UX design permet d'améliorer la qualité 
+                            de l'expérience perçue par l'utilisateur dans toute situation d'interaction avec un dispositif, notamment numérique." src="assets/img/bulb.png">
                         </p>
                         <span class="col s3">
                             <a class="waves-effect waves-light btn-large btn-color" v-on:click="treatComplaint">Valider</a>
@@ -83,8 +90,12 @@
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/avascript">
-        M.AutoInit();
+    <script type="text/javascript">
+        M.AutoInit(); 
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems);
+          });
     </script>
 </body>
 
