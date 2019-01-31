@@ -13,17 +13,17 @@
 </head>
 
 <body>
-    <div class="row main">
+    <div class="row main" id="app" v-cloak>
         <div class="col s10">
             <div class="row title">
                 Foo Fingerz
             </div>
-            <div class="row wrapper">      
+            <div class="row wrapper">
                 <div class="col s6 wrapper-element">
                     Game Computer Screen
                 </div>
                 <div class="col s6 wrapper-element">
-                    Game Dialog Screen
+                    <img v-bind:src="clientImg" alt="grumpy" class="client" />
                 </div>
             </div>
             <div class="row choices-zone">
@@ -32,20 +32,20 @@
                     <form action="#" class="items">
                         <p class="col s3">
                             <label>
-                                <input type="checkbox" name="choices" value="choice1" v-model="checkboxes.eLearning"/>
-                                <span>compétences 1</span>
+                                <input type="checkbox" name="choices" v-model="checkboxes.eLearning" />
+                                <span>E-learning</span>
                             </label>
                         </p>
                         <p class="col s3">
                             <label>
-                                <input type="checkbox" name="choices" value="choice2" v-model="checkboxes.dataScience" />
-                                <span>compétences 2</span>
+                                <input type="checkbox" name="choices" v-model="checkboxes.dataScience" />
+                                <span>Data Science</span>
                             </label>
                         </p>
                         <p class="col s3">
                             <label>
-                                <input type="checkbox" name="choices" value="choice3" v-model="checkboxes.uxDesign" />
-                                <span>compétences 3</span>
+                                <input type="checkbox" name="choices" v-model="checkboxes.uxDesign" />
+                                <span>UX Design</span>
                             </label>
                         </p>
                         <span class="col s3">
@@ -58,17 +58,19 @@
         <div class="col s2">
             <div class="row toDoList">
                 <div class="col s12">
-                    Game To Do List
+                    <span>Le client a dit :</span>
+                    <b v-show="isComplaint">{{currentProblem}}</b>
+                    <b v-show="!isComplaint">{{answer}}</b>
                 </div>
             </div>
             <div class="row ressouces">
                 <div class="col s12">
                     <span>Gestion de vos ressources : </span>
                     <div>
-                        Temps : </br> <progress max="100" value="80"></progress> </br>
+                        Temps : </br> <progress max="12" v-bind:value="time"></progress> </br>
                     </div>
                     <div>
-                        Satisfaction Client : </br> <progress max="100" value="30"></progress>
+                        Satisfaction Client : </br> <progress max="100" v-bind:value="satisfaction"></progress>
                     </div>
                 </div>
             </div>
