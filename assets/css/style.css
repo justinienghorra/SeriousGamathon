@@ -16,7 +16,8 @@
     height: 10%;
 }
 
-.choices{
+.choices-zone{
+    align-items: center;
     height: 20%;
 }
 
@@ -34,7 +35,13 @@
 
 .row{
     margin-bottom: 0%;
+    margin-left: 0%;
 }
+
+.items{
+    align-self: center;
+}
+
 
 html, body {
     height: 100%;
