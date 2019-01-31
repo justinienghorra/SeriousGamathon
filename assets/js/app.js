@@ -37,16 +37,19 @@ const app = new Vue({
                 if (this.checkboxes.uxDesign && this.checkboxes.eLearning) {
                     this.satisfaction = this.satisfaction + 10;
                     this.time = this.time - 3;
+                    this.pageToLoad = 3;
                     this.answer = this.currentUXandEl;
                     this.clientImg = "assets/img/happy.png";
                 } else if (this.checkboxes.uxDesign) {
                     this.satisfaction = this.satisfaction + 5;
                     this.time = this.time - 2;
+                    this.pageToLoad = 4;
                     this.answer = this.currentUX;
                     this.clientImg = "assets/img/ok.png";
                 } else if (this.checkboxes.eLearning) {
                     this.satisfaction = this.satisfaction + 3;
                     this.time = this.time - 1;
+                    this.pageToLoad = 2;
                     this.answer = this.currentUX;
                     this.clientImg = "assets/img/ok.png";
                 }
@@ -59,16 +62,19 @@ const app = new Vue({
                 if (this.checkboxes.dataScience && this.checkboxes.eLearning) {
                     this.satisfaction = this.satisfaction + 5;
                     this.time = this.time - 4;
+                    this.pageToLoad = 5;
                     this.answer = this.currentElandData;
                     this.clientImg = "assets/img/ok.png";
                 } else if (this.checkboxes.dataScience && this.checkboxes.uxDesign) {
                     this.satisfaction = this.satisfaction + 15;
                     this.time = this.time - 5;
+                    this.pageToLoad = 6;
                     this.answer = this.currentUXandData;
                     this.clientImg = "assets/img/happy.png";
                 } else if (this.checkboxes.dataScience) {
                     this.satisfaction = this.satisfaction + 5;
                     this.time = this.time - 3;
+                    this.pageToLoad = 5;
                     this.answer = this.currentData;
                     this.clientImg = "assets/img/ok.png";
                 }
@@ -112,6 +118,7 @@ const app = new Vue({
             uxDesign: false
         },
         currentProblem: "",
+        pageToLoad: 1,
         currentUX: "",
         currentEl: "",
         currentData: "",
