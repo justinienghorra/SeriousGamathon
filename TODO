@@ -1,0 +1,10 @@
+Sprints :
+1) Page d'accueil op + structure principale du jeu
+2) Interaction simple + structure plus développée (3 cases à cocher, coût total à droite des cases et barre de temps restante)
+3) Possibilité de choisir plusieurs compétences avec calcul dynamique du temps associé + structure dans ordinateur agent
+4) Interactions avec ordinateur agent + peaufinage
+
+Si possible : tout mettre sur github
+- images dans assets/img
+- texte dans text.json avec une structure du type { "plainte1" : "blabla", "" : "blabla" }
+- 
