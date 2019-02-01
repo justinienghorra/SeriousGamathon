@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
 [v-cloak] {
     display: none;
 }
@@ -10,11 +12,11 @@
 .wrapper {
     height: 70%;
 }
+
 .logo{
-    height: 70%;
+    height: 90%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:1%;
 }
 
 .align{
@@ -47,6 +49,7 @@
     background: #00aabb;
     color: white;
     border-radius: .4em;
+    padding : 1%;
 }
 
 .speech-bubble:after {
@@ -66,6 +69,9 @@
     height: 10%;
     text-align: center;
     background-color: rgba(213, 213, 213, 0.8);
+    font-family: concert One;
+    font-size : 2.5em;
+    color : #712c83
 }
 
 .choices-zone {
@@ -174,9 +180,6 @@
     margin-bottom: 0%;
 }
 
-.items {
-    margin-top: 2%
-}
 
 .btn-color {
     background-color: #54A0AB;

@@ -29,7 +29,7 @@ const app = new Vue({
             }
 
             if (this.nbComplaintsTreated == 0) {
-                if (this.checkboxes.dataScience) {
+                if (this.checkboxes.dataScience){
                     return M.toast({ html: "Vous ne m'aidez pas, là !", classes: "blue darken-4 white-text" });
                 }
                 this.isComplaint = false;
@@ -50,7 +50,19 @@ const app = new Vue({
                     this.satisfaction = this.satisfaction + 3;
                     this.time = this.time - 1;
                     this.pageToLoad = 2;
-                    this.answer = this.currentUX;
+                    this.answer = this.currentEl;
+                    this.clientImg = "assets/img/ok.png";
+                } else if (this.checkboxes.uxDesign && this.checkboxes.dataScience) {
+                    this.satisfaction = this.satisfaction + 3;
+                    this.time = this.time - 5;
+                    this.pageToLoad = 4;
+                    this.answer = this.currentUXandData;
+                    this.clientImg = "assets/img/ok.png";
+                } else if (this.checkboxes.eLearning && this.checkboxes.dataScience) {
+                    this.satisfaction = this.satisfaction + 3;
+                    this.time = this.time - 4;
+                    this.pageToLoad = 2;
+                    this.answer = this.currentElandData;
                     this.clientImg = "assets/img/ok.png";
                 }
             } else if (this.nbComplaintsTreated == 1) {
@@ -62,19 +74,37 @@ const app = new Vue({
                 if (this.checkboxes.dataScience && this.checkboxes.eLearning) {
                     this.satisfaction = this.satisfaction + 5;
                     this.time = this.time - 4;
-                    this.pageToLoad = 5;
+                    if(this.pageToLoad==2){
+                        this.pageToLoad = 9;
+                    } else if (this.pageToLoad ==3){
+                        this.pageToLoad = 5;
+                    } else if (this.pageToLoad==4){
+                        this.pageToLoad = 5;
+                    }
                     this.answer = this.currentElandData;
                     this.clientImg = "assets/img/ok.png";
                 } else if (this.checkboxes.dataScience && this.checkboxes.uxDesign) {
                     this.satisfaction = this.satisfaction + 15;
                     this.time = this.time - 5;
-                    this.pageToLoad = 6;
+                    if(this.pageToLoad==2){
+                        this.pageToLoad = 8;
+                    } else if (this.pageToLoad ==3){
+                        this.pageToLoad = 6;
+                    } else if (this.pageToLoad==4){
+                        this.pageToLoad = 11;
+                    }
                     this.answer = this.currentUXandData;
                     this.clientImg = "assets/img/happy.png";
                 } else if (this.checkboxes.dataScience) {
                     this.satisfaction = this.satisfaction + 5;
                     this.time = this.time - 3;
-                    this.pageToLoad = 5;
+                    if(this.pageToLoad==2){
+                        this.pageToLoad = 9;
+                    } else if (this.pageToLoad ==3){
+                        this.pageToLoad = 5;
+                    } else if (this.pageToLoad==4){
+                        this.pageToLoad = 10;
+                    }
                     this.answer = this.currentData;
                     this.clientImg = "assets/img/ok.png";
                 }
@@ -145,10 +175,10 @@ const app = new Vue({
             problem: "Je n'ai pas d'idées de série à regarder, votre site devrait afficher des recommandations...",
             UX: "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder.",
             eL: "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder.",
-            dataS: "J'ai vu que vous aviez mis des recommandations, mais j'ai eu beaucoup de mal à les trouver...",
+            dataS: "J'ai vu que vous aviez mis des recommandations, dommage qu'elles ne soient pas affichées sur la page d'accueil...",
             uxandel: "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder !",
             uxanddata: "Merci ! Vos recommandations m'ont permis de découvrir de nouvelles séries très rapidement !",
-            elanddata: "J'ai vu que vous aviez mis des recommandations, mais j'ai eu beaucoup de mal à les trouver...",
+            elanddata: "J'ai vu que vous aviez mis des recommandations, dommage qu'elles ne soient pas affichées sur la page d'accueil...",
         },
         client3: {
             problem: "Je n'arrive plus à accéder à ma liste de favoris, elle semble avoir été supprimée.",
