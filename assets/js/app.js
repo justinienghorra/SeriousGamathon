@@ -3,7 +3,7 @@ const app = new Vue({
     methods: {
         newClient: function () {
             if (this.nbComplaintsTreated == 3) {
-                window.location.href = "/end.html";
+                window.location.href = "C:/Users/hishe/OneDrive/Documents/GitHub/SeriousGamathon/end.html";
             } else {
                 const client = this.clients[this.nbComplaintsTreated];
                 this.isComplaint = true;
@@ -175,10 +175,10 @@ const app = new Vue({
             problem: "Je n'ai pas d'idées de série à regarder, votre site devrait afficher des recommandations...",
             UX: "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder.",
             eL: "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder.",
-            dataS: "J'ai vu que vous aviez mis des recommandations, mais j'ai eu beaucoup de mal à les trouver...",
+            dataS: "J'ai vu que vous aviez mis des recommandations, dommage qu'elles ne soient pas affichées sur la page d'accueil...",
             uxandel: "Vous n'avez pas résolu mon problème, je ne sais toujours pas quoi regarder !",
             uxanddata: "Merci ! Vos recommandations m'ont permis de découvrir de nouvelles séries très rapidement !",
-            elanddata: "J'ai vu que vous aviez mis des recommandations, mais j'ai eu beaucoup de mal à les trouver...",
+            elanddata: "J'ai vu que vous aviez mis des recommandations, dommage qu'elles ne soient pas affichées sur la page d'accueil...",
         },
         client3: {
             problem: "Je n'arrive plus à accéder à ma liste de favoris, elle semble avoir été supprimée.",
