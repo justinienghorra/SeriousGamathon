@@ -3,7 +3,7 @@ const app = new Vue({
     methods: {
         newClient: function () {
             if (this.nbComplaintsTreated == 3) {
-                window.location.href = "C:/Users/hishe/OneDrive/Documents/GitHub/SeriousGamathon/end.html";
+                window.location.href = "/end.html";
             } else {
                 const client = this.clients[this.nbComplaintsTreated];
                 this.isComplaint = true;
